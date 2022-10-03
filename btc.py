@@ -7,8 +7,6 @@ import os
 
 import time
 
-from playsound import playsound
-
 import sys
 
 while True:
@@ -36,8 +34,6 @@ while True:
         pu2 = pu2 + 1
 
         if pu2 == 13500:
-
-            playsound("mus.wav")
 
             sys.exit()
 
