@@ -1,3 +1,6 @@
+#do not find the last version of my code but you got the idea (renaming the xlsx file, why not adapt the code for eth,
+#and find the correct class to grab)
+
 pu = 0
 
 pu2 = 3212
@@ -68,13 +71,13 @@ while pu < 1:
 
         print("hgfdf", pu2)
 
-        url = requests.get("https://www.blockchain.com/" + type_l[tf] + "/blocks?page=" + pu2)
+        url = requests.get("https://www.blockchain.com/" + type_l[tf] + "/blocks?page=" + pu2)  
 
         scraping = BeautifulSoup(url.text, "html.parser")
 
         if url.ok:
 
-            for titre in scraping.find_all(attrs={"class": "rjh6gp-0"}):
+            for titre in scraping.find_all(attrs={"class": "rjh6gp-0"}):  #may cause error
 
                 count_zero = 0
 
