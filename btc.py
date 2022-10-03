@@ -1,8 +1,6 @@
 #do not find the last version of my code but you got the idea (renaming the xlsx file, why not adapt the code for eth,
 #and find the correct class to grab)
 
-pu = 0
-
 pu2 = 3212
 
 import os
@@ -13,7 +11,7 @@ from playsound import playsound
 
 import sys
 
-while pu < 1:
+while True:
 
     import requests
 
